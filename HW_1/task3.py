@@ -14,7 +14,7 @@ else:
     res2 = 0
     for i in range(len(num)//2):
         res1 += int(num[i])
-        res2 += int(num[len(num)//2 + i])
+        res2 += int(num[-1 - i])
     if res1 == res2:
         print(f'{num} Ура! Это счастливый номер билета')
     else:
