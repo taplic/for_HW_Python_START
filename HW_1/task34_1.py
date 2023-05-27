@@ -10,7 +10,7 @@
 # **Ввод:** пара-ра-рам рам-пам-папам па-ра-па-да
 #    **Вывод:** Парам пам-пам
 def vowel_count(your_str):
-    return sum(1 for i in your_str if i in 'аеёийоуыэюя')
+    return sum(i in 'аеёийоуыэюя' for i in your_str )
 your_words = input('Введите фразы стиха через пробел: ').lower().split()
 tmp = vowel_count(your_words[0])
 if all([vowel_count(i) == tmp for i in your_words]):
